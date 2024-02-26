@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sachin's-portfolio</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--Montserrat font-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+</head>
+
+<body>
+  <section>
+    <!-- MOBILE NAVIGATION -->
+    <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+      <a href="#home" class="w3-bar-item w3-button w3-hover-none">CURRICULUM VITAE</a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="toggleNavigation()">&#9776;</a>
+    </div>
+    <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+      <a href="#about"
+        class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
+        onclick="toggleNavigation()">ABOUT</a>
+      <a href="#resume"
+        class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
+        onclick="toggleNavigation()">RESUME</a>
+      <a href="#contact"
+        class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
+        onclick="toggleNavigation()">CONTACT</a>
+    </div>
+
+    <!-- SOCIAL SECTION -->
+    <section class="image-section w3-quarter w3-fixed w3-padding-small">
+      <!--IMAGE/AVATAR-->
+      <img src="sachin.jpeg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;" />
+      <!--SCIAL NETWORK BUTTONS-->
+      <div class="links w3-margin-top w3-padding-small">
+        <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/Sinhasachin067" target="_blank">
+          <i data-feather="github"></i>
+        </a>
+
+        <a class="icon-link w3-text-sand w3-hover-text-amber" href="mailto:sinhasachin067@gmail.com" target="_blank">
+          <i data-feather="mail"></i>
+        </a>
+        <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://twitter.com/Sachink445" target="_blank">
+          <i data-feather="twitter"></i>
+        </a>
+        <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/sinhasachin067"
+          target="_blank">
+          <i data-feather="linkedin"></i>
+        </a>
+
+
+      </div>
+      <!--CV DOWNLOAD BUTTON-->
+      <div class="w3-container w3-padding-16">
+        <a href="SachinResume.pdf"
+          class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank"
+          download="SachinResume.pdf">
+          <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+          <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+        </a>
+      </div>
+    </section>
+
+    <!--CV CONTENT SECTION-->
+    <section class="w3-threequarter w3-padding-large w3-right">
+      <!--DESKTOP NAVIGATION-->
+      <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+        <a href="#home"
+          class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">CURRICULUM
+          VITAE</a>
+        <a href="#contact"
+          class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+        <a href="#resume"
+          class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+        <a href="#about"
+          class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+      </div>
+      <div class="content-container w3-margin-top-2">
+        <!--HOME SECTION-->
+        <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+          <p style="font-style: italic; font-size:x-large;">"coding is everyThing!"</p>
+          <h1>SACHIN KUMAR SINHA</h1>
+          <h2>Full Stack developer</h2>
+          <p></p>
+        </div>
+
+        <!--ABOUT SECTION-->
+        <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+          <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+          <p class="w3-margin-top-2">
+            <b>Hii!<br><i>
+                First of all thank you for visiting my profile</i></b> <br>I am Sachin Kumar Sinha, a
+            Full stack developer from India. I am a self motivated and hardworking person,
+            always willing to learn new technologies and skills.
+          </p>
+        </div>
+
+        <!--RESUME-->
+        <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+          <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+          <div class="w3-container w3-margin-top-2 w3-cursive">
+
+            <!--EMPLOYMENT HISTORY SECTION-->
+            <!-- <h3 class="w3-border-amber">Experience</h3>
+            <div class="">
+              <h4>Learner Facilitator (LF) </h4>
+              <h5>At Skill development Centre of Bihar Government</h5>
+              <p>March 2021 - August 2022</p>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>• Responsible for Sprint Planning, Training, Support.</li>
+                <li>• Troubleshoot & Issue Diagnosis.</li>
+                <li>• Handling the 5 member team.</li>
+              </ul>
+            </div>
+          </div> -->
+            <!---EDUCATION SECTION-->
+            <div class="w3-container w3-margin-top-1 w3-cursive">
+              <h3 class="w3-border-amber">MY EDUCATION</h3>
+              <h4>Indira Gandhi National Open University -New Delhi, Indian</h4>
+              <h5>Master of Computer Applications(MCA)</h5>
+              <p>From January/2023- Pursuing </p>
+              <h4>Maulana Mazharul Haque Arabic and Persian University, Patna, Bihar</h4>
+              <h5>Bachelor of Computer Applications(BCA)</h5>
+              <p>Session : 2017-2020</p>
+              <p>Passing year :2021 </p>
+            </div>
+
+            <!--SKILLS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY SKILLS</h3>
+              <!--SOFT SKILLS-->
+              <h4>Professional skill and ethics</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>• Communication skills<br>
+                  • Soft skills<br>
+                  • Problem solving<br>
+                  • Team building<br>
+                  • Time management</li>
+                <!-- <li>I have a talent for investigating and researching different processes to offer d </li>
+                <li>Provided engaging text, image and video content for all social media and professional accounts</li>
+              -->
+              </ul>
+
+
+              <h4>Technical skills</h4>
+              <div class="tech-div">
+                <!--TECHNICAL SKILLS-->
+
+                <div>
+                  <li><img width="50px;" height="50px;" src="html-1.svg" alt="HTML"> HTML</li>
+                </div>
+
+                <div>
+                  <li><img width="50px;" height="50px;" src="css-3.svg" alt="HTML"> CSS</li>
+                </div>
+
+                <div>
+                  <li><img width="50px;" height="50px;" src="bootstrap-5-1.svg" alt="HTML"> BOOTSTRAP</li>
+                </div>
+
+                <div>
+                  <li><img width="50px;" height="50px;" src="logo-javascript.svg" alt="HTML"> JAVASCRIPT</li>
+                </div>
+
+
+                <div>
+                  <li><img width="50px;" height="50px;" src="react-2.svg" alt="reactjs"> REACT.JS</li>
+                </div>
+
+                <div>
+                  <li><img width="50px;" height="50px;" src="nodejs-icon.svg" alt="reactjs"> NODE.JS</li>
+                </div>
+
+                <div>
+                  <li><img width="50px;" height="50px;" src="expressjs-icon.svg" alt="reactjs"> EXPRESS.JS</li>
+                </div>
+
+
+                <div>
+                  <li><img width="50px;" height="50px;" src="mongodb-icon.svg" alt="reactjs"> MONGODB</li>
+                </div>
+
+                <div>
+                  <li><img width="50px;" height="50px;" src=" mysql-horizontal.svg" alt="reactjs"> MYSQL</li>
+                </div>
+
+
+              </div>
+              <!-- <li>Apart fro</li> -->
+
+            </div>
+
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <!--Certification-->
+              <h3 class="w3-border-amber">Certificates</h3>
+              <div class="">
+
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>• TCS ION Career Edge -Young Professional Certificate</li>
+                  <li>• Certificate in Communication skills </li>
+                  <li>• Certificate in Information & Technology</li>
+                  <li>• Certificate in soft skills </li>
+                  <li>• Application of AI for Effective Learner Support Services</li>
+                </ul>
+              </div>
+            </div>
+
+            <!--INTERESTS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY HOBBIES</h3>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <!-- <li>I love plantation</li> -->
+                <li>Solving real life problem and playing chess</li>
+              </ul>
+            </div>
+
+            <!-- <div class="w3-container w3-margin-top-2 w3-cursive">
+            <h3 class="w3-border-amber">MY Projects</h3>
+
+
+
+            <ul class="w3-ul" style="font-weight: 500;">
+              <h4>My Portfolio</h4>
+              <p>This is the site of Todo list you can add your list item, if you do not like you can easily remove it.
+              </p>
+              <iframe height="400px" src="https://todolist.sachinsinha067.repl.co/" title="Todo List">
+              </iframe>
+              <li><a href="https://todolist.sachinsinha067.repl.co/"><button>view site</button></a></li>
+              <li>Skills_Applied: HTML | CSS | JAVASCRIPT |</li>
+            </ul>
+            <hr>
+
+            <ul class="w3-ul" style="font-weight: 500;">
+              <h4>My Calculator</h4>
+              <p>This is the calulator, here you can calculate</p>
+              <iframe height="500px" src="https://calculator.sachinsinha067.repl.co/" title="Todo List">
+              </iframe>
+              <li><a href="https://calculator.sachinsinha067.repl.co/"><button>view site</button></a></li>
+              <li>Skills_Applied: HTML | CSS | JAVASCRIPT |</li>
+            </ul>
+            <hr>
+
+
+            <ul class="w3-ul" style="font-weight: 500;">
+              <h4>My Portfolio</h4>
+              <p>This is the portfolio site where you can know about me and contact.</p>
+              <iframe height="400px" src="https://sachinsportfolio.sachinsinha067.repl.co" title="My portfolio">
+              </iframe>
+              <li><a href="https://sachinsportfolio.sachinsinha067.repl.co"><button>view site</button></a></li>
+              <li>Skills_Applied: HTML | CSS | JAVASCRIPT |</li>
+            </ul>
+            <hr>
+
+          </div> -->
+
+
+            <!-- REFERENCE SECTION
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              
+              </ul>
+            </div>            
+          </div> -->
+
+            <!--CONTACT SECTION-->
+            <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+              <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
+                <div class="w3-margin-top-2" style="font-weight: 500;">
+                  <p>Name: Sachin Kumar Sinha</p>
+                  <p>Adress: Begusarai,Bihar,Bharat</p>
+                  <p>Phone number:+91 8409693094</p>
+                  <p>E-mail: sinhasachin067@gmail.com</p>
+                </div>
+            </div>
+
+            <!--FOOTER-->
+            <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+            <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+              <p>© 2023-Sachin Sinha</p>
+              <p class="w3-small">All right reserved@sachinsinha</p>
+              <!-- End footer -->
+            </footer>
+
+            <!--END OF CV SECTION-->
+    </section>
+  </section>
+  <script>
+    // Function to toggle mobile navigation
+    function toggleNavigation() {
+      let nav = document.getElementById("mobile-nav");
+      if (nav.classList.contains('w3-show')) {
+        nav.classList.remove('w3-show');
+      } else {
+        nav.classList.add('w3-show');
+      }
+    }
+  </script>
+  <script>
+    // Script to load feather icons
+    feather.replace()
+  </script>
+</body>
+
+</html>
